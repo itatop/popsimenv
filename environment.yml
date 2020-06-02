@@ -1,0 +1,12 @@
+name: popsim_env_test
+channels:
+  - conda-forge
+  - bioconda
+  - terhorst
+dependencies:
+  - python=3.7
+  - pip:
+    - stdpopsim==0.1.0
+  - bioconda:dadi
+  - bioconda:pysam
+  - terhorst:smcpp
