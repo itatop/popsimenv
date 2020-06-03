@@ -6,9 +6,14 @@ For further reading see:
 https://github.com/popsim-consortium/analysis
 https://github.com/popsim-consortium/stdpopsim
 
-# usage:
+# installations:
 
 > You need to install Docker before going any further.
+
+The Dockerfile takes care to all the installations and dependencies required. just follow the 'usage' section below.
+NOTE: please ignore the installation instructions detailed in the README.md files under the 'analysis'.
+
+# usage:
 
 1. (One time only) Inside this directory, run the following bash command to build the image docker using the Dockerfile:
     ```bash
@@ -21,4 +26,3 @@ https://github.com/popsim-consortium/stdpopsim
     ```
    
 > Using the -v option enables syncing the src folder between the host and the container for easier editing.
-
