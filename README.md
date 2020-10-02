@@ -22,7 +22,7 @@ NOTE: please ignore the installation instructions detailed in the README.md file
 
 2. Inside this directory, run the container interactively with the src folder as shared volume:
     ```bash
-    docker run -t -i -v $(pwd)/src:/code/src popsimenv-image /bin/bash
+    docker run -t -i -v $(pwd)/src:/code/src popsimenv-image //bin/bash
     ```
    
 > Using the -v option enables syncing the src folder between the host and the container for easier editing.
