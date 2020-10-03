@@ -21,8 +21,18 @@ NOTE: please ignore the installation instructions detailed in the README.md file
     ```
 
 2. Inside this directory, run the container interactively with the src folder as shared volume:
+for Mac/Linux users:
     ```bash
     docker run -t -i -v $(pwd)/src:/code/src popsimenv-image //bin/bash
     ```
+for Window users:
+    ```bash
+    docker run -t -i -v %cd%/src:/code/src popsimenv-image //bin/bash
+    ```
    
+3. Activate the conda enviroment:
+    ```bash
+    conda activate popsim_env_test
+    ```
+
 > Using the -v option enables syncing the src folder between the host and the container for easier editing.
