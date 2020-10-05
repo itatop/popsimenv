@@ -25,7 +25,7 @@ for Mac/Linux users:
     ```bash
     docker run -t -i -v $(pwd)/src:/code/src popsimenv-image //bin/bash
     ```
-for Window users:
+for Windows users:
     ```bash
     docker run -t -i -v %cd%/src:/code/src popsimenv-image //bin/bash
     ```
