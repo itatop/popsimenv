@@ -30,7 +30,7 @@ NOTE: please ignore the installation instructions detailed in the README.md file
 
 * for Windows users:
     ```bash
-    docker run --rm -t -i --mount type=bind,source=%cd%/src,target=/code/src popsimenv-image //bin/bash
+    docker run --rm -t -i --name popsimenv --mount type=bind,source=%cd%/src,target=/code/src popsimenv-image //bin/bash
     ```
 
 3. Activate the conda enviroment:
