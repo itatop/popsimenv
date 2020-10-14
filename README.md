@@ -8,19 +8,27 @@ https://github.com/popsim-consortium/stdpopsim
 
 # installations:
 
-> You need to install Docker before going any further.
+> You need to install Git and Docker before going any further:
+https://git-scm.com/downloads
+https://www.docker.com/products/docker-desktop
 
 The Dockerfile takes care to all the installations and dependencies required. just follow the 'usage' section below.
 NOTE: please ignore the installation instructions detailed in the README.md files under the 'analysis'.
 
 # usage:
 
-1. (One time only) Inside this directory, run the following bash command to build the image docker using the Dockerfile:
+one time only:
+
+1. Install the popsimenv directory with git.
+
+2. Inside this directory, run the following bash command to build the image docker using the Dockerfile:
     ```bash
     docker build -t popsimenv-image .
     ```
 
-2. Inside this directory, run the container interactively with the src folder as shared volume:
+Opening a working season:
+
+1. Inside this directory, run the container interactively with the src folder as shared volume:
 
 * for Mac/Linux users:
     ```bash
@@ -33,7 +41,7 @@ NOTE: please ignore the installation instructions detailed in the README.md file
     docker run --rm -t -i --name popsimenv --mount type=bind,source=%cd%/src,target=/code/src popsimenv-image //bin/bash
     ```
 
-3. Activate the conda enviroment:
+2. Activate the conda enviroment:
     ```bash
     conda activate popsim_env_test
     ```
