@@ -3,12 +3,14 @@
 This is a private testing repository for creating testing environments - for running population genetics simulations using the stdpopsim open-source library.
 The original testing repository popsim-consortium/analysis is copied and modified to our objectives.
 For further reading see:
+
 https://github.com/popsim-consortium/analysis
 https://github.com/popsim-consortium/stdpopsim
 
 # installations:
 
 > You need to install Git and Docker before going any further:
+
 https://git-scm.com/downloads
 https://www.docker.com/products/docker-desktop
 
@@ -28,7 +30,9 @@ one time only:
 
 Opening a working season:
 
-1. Inside this directory, run the container interactively with the src folder as shared volume:
+1. Open Docker Desktop app.
+
+2. Inside this directory, run the container interactively with the src folder as shared volume:
 
 * for Mac/Linux users:
     ```bash
@@ -41,9 +45,8 @@ Opening a working season:
     docker run --rm -t -i --name popsimenv --mount type=bind,source=%cd%/src,target=/code/src popsimenv-image //bin/bash
     ```
 
-2. Activate the conda enviroment:
+3. Activate the conda enviroment:
     ```bash
     conda activate popsim_env_test
     ```
 
-> Using the -v option enables syncing the src folder between the host and the container for easier editing.
