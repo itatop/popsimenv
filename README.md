@@ -28,7 +28,7 @@ one time only:
     docker build -t popsimenv-image .
     ```
 
-Opening a working season:
+Opening a working session:
 
 1. Open Docker Desktop app.
 
