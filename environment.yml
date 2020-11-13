@@ -10,3 +10,18 @@ dependencies:
   - bioconda:dadi
   - bioconda:pysam
   - terhorst:smcpp
+  - msprime
+  - scikit-allel
+  - snakemake
+  - setuptools
+  - matplotlib
+  - pandas=0.24.2
+  - tqdm
+  - seaborn
+  - pysam
+  - htslib
+  - ldc
+  - scipy
+  - attrs
+  - cython
+  - h5py

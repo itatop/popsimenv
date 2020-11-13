@@ -3,6 +3,7 @@ FROM continuumio/miniconda3:4.8.2
 RUN apt-get install -y libgsl-dev libglu1
 
 ADD environment.yml /tmp/environment.yml
+RUN conda update --all
 RUN conda env create -f /tmp/environment.yml
 
 # Pull the environment name out of the environment.yml

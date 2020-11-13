@@ -121,9 +121,10 @@ rule simulation:
         output_dir + "/Intermediate/{seeds}/{chrms}.trees"
 
     run:
+        engine = stdpopsim.get_default_engine()
         contig = species.get_contig(wildcards.chrms, genetic_map=genetic_map_id)
         samples = model.get_samples(*num_samples_per_population)
-        ts = model.simulate(contig, samples, seed=wildcards.seeds)
+        ts = engine.simulate(model, contig, samples, seed=wildcards.seeds)
         ts.dump(output[0])
 
 
@@ -366,9 +367,9 @@ rule plot_estimates:
                 sub = mask_table[mask_table[0] == chr]
                 mask_ints = pd.IntervalIndex.from_arrays(sub[1], sub[2])
                 simulated_genome_length -= np.sum(mask_ints.length)
-        if config["species"] == "dromel":
+        if config["species"] == "Dromel":
             plots.plot_fsc_dadi_smcpp_results_drosophila_IM(input[1], input[0], input[2], output, simulated_genome_length)
-        if config["species"] == "homsap":
+        if config["species"] == "HomSap":
             plots.plot_fsc_dadi_smcpp_results_human_IM(input[1], input[0], input[2], output, simulated_genome_length)
 
 

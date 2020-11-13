@@ -50,3 +50,9 @@ Opening a working season:
     conda activate popsim_env_test
     ```
 
+Running Snakefile:
+1. for example:
+    ```bash
+    snakemake -j 1 --config config="test-config"
+    ```
+
