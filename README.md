@@ -51,7 +51,7 @@ Opening a working session:
     ```
 
 Running Snakefile:
-1. for example:
+1. for example: (run from two_population_analysis)
     ```bash
     snakemake -j 1 --config config="test-config"
     ```

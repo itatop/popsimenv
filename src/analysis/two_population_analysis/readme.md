@@ -7,7 +7,7 @@ Currently, this pipeline is only set up to run on the Gutenkunst 2009
 model for humans and Li & Stephan 2006 model for Drosophila.
 
 The Snakemake workflow includes the necessary pipeline
-for simulation, analyses, and plotting in an efficient manner.
+for simulation, analysis, and plotting in an efficient manner.
 Simply choose your parameters in a config file,
 and let snakemake handle the rest.
 (For large runs, the use of a cluster is highly encouraged)
