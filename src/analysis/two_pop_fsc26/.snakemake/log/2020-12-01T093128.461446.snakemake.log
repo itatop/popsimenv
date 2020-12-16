@@ -1,0 +1,3 @@
+ModuleNotFoundError in line 31 of /code/src/analysis/two_pop_fsc26/Snakefile:
+No module named 'plots'
+  File "/code/src/analysis/two_pop_fsc26/Snakefile", line 31, in <module>

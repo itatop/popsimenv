@@ -1,0 +1,2 @@
+SyntaxError in line 136 of /code/src/analysis/two_pop_fsc26/Snakefile:
+No rule keywords allowed after run/shell/script/wrapper/cwl in rule dadi_sfs_to_fsc. (Snakefile, line 136)
