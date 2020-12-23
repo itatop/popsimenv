@@ -1,6 +1,14 @@
 FROM continuumio/miniconda3:4.8.2
 
+RUN apt-get update
+RUN apt install -y build-essential
 RUN apt-get install -y libgsl-dev libglu1
+RUN mkdir /code
+RUN mkdir /code/G-PhoCS
+RUN git clone https://github.com/gphocs-dev/G-PhoCS.git /code/G-PhoCS
+WORKDIR /code/G-PhoCS
+RUN make
+WORKDIR /
 
 ADD environment.yml /tmp/environment.yml
 RUN conda update --all
