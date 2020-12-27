@@ -1,3 +1,0 @@
-WorkflowError in line 40 of /code/src/analysis/two_pop_fsc26/Snakefile:
-Config file /code/src/simulations/two_pop_fsc26_sim//config.json not found.
-  File "/code/src/analysis/two_pop_fsc26/Snakefile", line 40, in <module>

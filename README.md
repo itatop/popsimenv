@@ -7,15 +7,23 @@ For further reading see:
 https://github.com/popsim-consortium/analysis
 https://github.com/popsim-consortium/stdpopsim
 
+# work through:
+
+> src folder
+
+# modification of the image:
+
+> done by changing Dockerfile and environment.yml
+
 # installations:
 
 > You need to install Git and Docker before going any further:
 
 https://git-scm.com/downloads
+
 https://www.docker.com/products/docker-desktop
 
 The Dockerfile takes care to all the installations and dependencies required. just follow the 'usage' section below.
-NOTE: please ignore the installation instructions detailed in the README.md files under the 'analysis'.
 
 # usage:
 
@@ -48,6 +56,10 @@ Opening a working session:
 3. Activate the conda enviroment:
     ```bash
     conda activate popsim_env_test
+    ```
+4. The shared volume of the image and your file system is (through image):
+    ```bash
+    /code/src
     ```
 
 Running Snakefile:

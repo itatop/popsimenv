@@ -1,7 +1,0 @@
-Building DAG of jobs...
-File path /code/src/simulations/two_pop_fsc26_sim//Results/estimates_N_tdiv_fsc.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-File path /code/src/simulations/two_pop_fsc26_sim//Results/estimates_mig_fsc.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-MissingInputException in line 112 of /code/src/analysis/two_pop_fsc26/Snakefile:
-Missing input files for rule all:
-/code/src/simulations/two_pop_fsc26_sim//Results/estimates_N_tdiv_fsc.png
-/code/src/simulations/two_pop_fsc26_sim//Results/estimates_mig_fsc.png

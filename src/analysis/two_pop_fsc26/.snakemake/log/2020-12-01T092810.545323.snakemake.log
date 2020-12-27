@@ -1,2 +1,0 @@
-SyntaxError in line 251 of /code/src/analysis/two_pop_fsc26/Snakefile:
-No rule keywords allowed after run/shell/script/wrapper/cwl in rule get_fsc_output. (Snakefile, line 251)

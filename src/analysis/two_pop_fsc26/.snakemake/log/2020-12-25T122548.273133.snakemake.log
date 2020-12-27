@@ -1,0 +1,3 @@
+ModuleNotFoundError in line 8 of /code/src/analysis/two_pop_fsc26/Snakefile:
+No module named 'fastsimcoal'
+  File "/code/src/analysis/two_pop_fsc26/Snakefile", line 8, in <module>
