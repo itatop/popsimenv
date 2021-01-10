@@ -1,0 +1,3 @@
+NotADirectoryError in line 25 of /code/src/analysis/two_population_analysis/Snakefile:
+[Errno 20] Not a directory: '/code/src/simulations/kai-first/config.json/config.json'
+  File "/code/src/analysis/two_population_analysis/Snakefile", line 25, in <module>

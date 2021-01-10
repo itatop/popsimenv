@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fsc_setup
+	1	get_best_fsc_runs
+	1	get_fsc_output
+	1	plot_estimates
+	1	run_fsc
+	6
+Select jobs to execute...
+
+[Fri Jan  1 10:14:50 2021]
+rule fsc_setup:
+    input: ex2/Intermediate/1845187043/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    output: ex2/Intermediate/1845187043/fsc_analysis/IM_hum.est, ex2/Intermediate/1845187043/fsc_analysis/IM_hum.tpl
+    jobid: 5
+    wildcards: seeds=1845187043, demo_model=IM_hum
+
+[Fri Jan  1 10:14:50 2021]
+Finished job 5.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Fri Jan  1 10:14:50 2021]
+rule run_fsc:
+    input: ex2/Intermediate/1845187043/fsc_analysis/IM_hum.tpl
+    output: ex2/Intermediate/1845187043/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    jobid: 4
+    wildcards: seeds=1845187043, demo_model=IM_hum
+
+[Fri Jan  1 10:14:50 2021]
+Error in rule run_fsc:
+    jobid: 4
+    output: ex2/Intermediate/1845187043/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    shell:
+        cd ex2/Intermediate/1845187043/fsc_analysis/  &&               mkdir run1 &&              cd run1 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run2 &&              cd run2 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run3 &&              cd run3 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run4 &&              cd run4 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run5 &&              cd run5 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run6 &&              cd run6 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run7 &&              cd run7 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run8 &&              cd run8 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              mkdir run9 &&              cd run9 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4 &&              cd .. &&              cd run10 &&              cp ../IM_hum* ./ &&              ../../../../../fsc26/fsc26 fsc26 -t IM_hum.tpl -n 100000 -d -e IM_hum.est -M -L 40 -q -c 4
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/two_pop_fsc26/.snakemake/log/2021-01-01T101447.126003.snakemake.log

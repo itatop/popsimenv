@@ -145,8 +145,8 @@ rule fsc_setup:
     output: output_dir + "/Intermediate/{seeds}/fsc_analysis/{demo_model}.est",
             output_dir + "/Intermediate/{seeds}/fsc_analysis/{demo_model}.tpl"
 
-    shell: "cp /code/src/methods/fsc26/fsc_files/{wildcards.demo_model}.est {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.est && \
-            cp /code/src/methods/fsc26/fsc_files/{wildcards.demo_model}.tpl {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.tpl && \
+    shell: 	"cp fsc_files/{wildcards.demo_model}.est {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.est && \
+            cp fsc_files/{wildcards.demo_model}.tpl {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.tpl && \
             sed -i.bak 's/SAMPLE_SIZE/{num_sampled_genomes_per_replicate}/' {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.tpl && rm {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.tpl.bak &&\
             cd /code/src/methods/fsc26/ && chmod +x fsc26"
 
@@ -158,56 +158,56 @@ rule run_fsc:
     # I want to run this with a bash loop from 1..fit_runs to automate the number of fsc runs but for the life of me I cant get it to work in snakemake (it works fine in a shell script)
     # it keeps spitting out a python 'out of index' error and I've spent way too much time trying to troubleshoot it with no success
     # if someome can figure this out they would be my hero. Until that day, will continue to use this wall of bash code
-    shell: "cd {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/  && \
+    shell: 	"cd {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/  && \
               mkdir run1 &&\
               cd run1 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run2 &&\
               cd run2 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run3 &&\
               cd run3 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run4 &&\
               cd run4 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run5 &&\
               cd run5 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run6 &&\
               cd run6 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run7 &&\
               cd run7 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run8 &&\
               cd run8 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run9 &&\
               cd run9 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               cd run10 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              ../../../../../fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4"
-
+              /code/src/methods/fsc26/fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4"
+			
 # ###############################################################################
 # Compile results and plot
 # ###############################################################################

@@ -1,0 +1,111 @@
+Building DAG of jobs...
+File path /code/src/simulations/kai-first//Results/estimates_N_tdiv_dadi_fsc_smcpp.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/estimates_mig_dadi_fsc.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/smcpp_estimated_Ne.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/best_fsc_runs.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/best_dadi_runs.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/smcpp_runs.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/estimates_N_tdiv_dadi_fsc_smcpp.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/estimates_mig_dadi_fsc.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/dadi_results_sorted.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/fsc_results_sorted.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/split/joint.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/best_fsc_runs.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/best_dadi_runs.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/smcpp_runs.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_3823185381.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_1358822685.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_561383553.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_789925284.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_170765737.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_878579710.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_3549516158.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_2438360421.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_2285257250.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_2557845021.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/dadi_results_sorted.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/fsc_results_sorted.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_3823185381.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_3823185381.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22.trees contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs_with_nonvariant.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22.trees contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_1358822685.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_1358822685.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_561383553.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_561383553.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_789925284.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_789925284.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_170765737.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_170765737.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_878579710.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_878579710.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_3549516158.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_3549516158.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_2438360421.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_2438360421.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_2285257250.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_2285257250.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_fit_2557845021.pdf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/dadi_analysis/IM_fsc/model_params_2557845021.txt contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/IM_hum.tpl contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/IM_hum_jointDAFpop1_0.obs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/IM_hum.est contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/IM_hum.tpl contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22_dadi_joint_sfs_with_nonvariant.fs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/fsc_analysis/IM_hum_jointDAFpop1_0.obs contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/model.final.pop1.json contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/model.final.pop2.json contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/trees.smc.gz.final.json.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/split/model.final.json contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/split/joint.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22.treespop1.smc.gz contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22.treespop2.smc.gz contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/model.final.pop1.json contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/model.final.pop2.json contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22.trees contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22.treespop1.smc.gz contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/chr22.treespop2.smc.gz contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Intermediate/1845187043/split/model.final.json contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /code/src/simulations/kai-first//Results/smcpp_estimated_Ne.png contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	compound_smcpp
+	1	dadi_sfs_to_fsc
+	1	download_genetic_map
+	10	fit_dadi_model_to_msprime_sfs
+	1	fsc_setup
+	1	get_best_dadi_fsc_runs
+	1	get_dadi_fsc_output
+	1	plot_estimates
+	1	run_fsc
+	1	run_smcpp
+	1	simulation
+	1	smcpp_plot
+	1	ts_to_dadi_sfs
+	1	ts_to_smc
+	24
+
+[Sat Nov 14 08:32:50 2020]
+Job 7: Downloading default genetic map
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/two_population_analysis/.snakemake/log/2020-11-14T083247.450910.snakemake.log
