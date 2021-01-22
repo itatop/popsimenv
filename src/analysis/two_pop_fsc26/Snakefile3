@@ -1,6 +1,6 @@
 """
 Snakefile for running fastsimcoal26 on stdpopsim data
-Two population analysis - change of second migration time
+Two population analysis
 """
 
 import sys
@@ -12,11 +12,7 @@ sys.path.append("/code/src/methods/dadi/")
 import dadi_utils
 import tskit
 import pandas as pd
-import plots
-
-#from shutil import copyfile
-#import pathlib
-###from stdpopsim import models
+import plots3
 
 # ###############################################################################
 # preperation :
@@ -44,6 +40,20 @@ species = stdpopsim.get_species(config["species"])
 # The specific model you would like to run
 model = species.get_demographic_model(config["model"])
 
+# modifying the models events
+# T_Div from 5600 to 7600 generations of generation_time
+T_Div = 0
+for i in range(len(model.demographic_events)):
+	e = model.demographic_events[i]
+	if e.type == "mass_migration":
+		if e.source == 1 and e.dest == 0 and e.proportion == 1.0:
+			print(e.time * model.generation_time)
+			T_Div = 190e3 / model.generation_time
+			model.demographic_events[i].time = T_Div
+			print("changed!")
+			print(T_Div * model.generation_time)
+			break
+
 # The genetic map you would like to use.
 # if value None is given default_recombination_rates are
 # used with a flat map
@@ -68,6 +78,9 @@ mutation_rate = species.genome.mean_mutation_rate
 
 # For plotting.
 generation_time = model.generation_time
+
+# path for methods directory.
+methods_dir_path = "/code/src/methods"
 
 # ###############################################################################
 # GENERAL RULES & GLOBALS
@@ -148,7 +161,7 @@ rule fsc_setup:
     shell: 	"cp fsc_files/{wildcards.demo_model}.est {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.est && \
             cp fsc_files/{wildcards.demo_model}.tpl {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.tpl && \
             sed -i.bak 's/SAMPLE_SIZE/{num_sampled_genomes_per_replicate}/' {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.tpl && rm {output_dir}/Intermediate/{wildcards.seeds}/fsc_analysis/{wildcards.demo_model}.tpl.bak &&\
-            cd /code/src/methods/fsc26/ && chmod +x fsc26"
+            cd {methods_dir_path}/fsc26/ && chmod +x fsc26"
 
 rule run_fsc:
     input: expand(output_dir + "/Intermediate/{seeds}/fsc_analysis/{demo_model}.tpl", seeds=seed_array,demo_model=fsc_model)
@@ -162,52 +175,52 @@ rule run_fsc:
               mkdir run1 &&\
               cd run1 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run2 &&\
               cd run2 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run3 &&\
               cd run3 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run4 &&\
               cd run4 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run5 &&\
               cd run5 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run6 &&\
               cd run6 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run7 &&\
               cd run7 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run8 &&\
               cd run8 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               mkdir run9 &&\
               cd run9 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
+              {methods_dir_path}/fsc26/fsc26 fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4 &&\
               cd .. &&\
               cd run10 &&\
               cp ../{wildcards.demo_model}* ./ &&\
-              /code/src/methods/fsc26/fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4"
-			
+              {methods_dir_path}/fsc26/fsc26 -t {wildcards.demo_model}.tpl -n 100000 -d -e {wildcards.demo_model}.est -M -L 40 -q -c 4"
+
 # ###############################################################################
 # Compile results and plot
 # ###############################################################################
@@ -246,14 +259,11 @@ rule plot_estimates:
                 sub = mask_table[mask_table[0] == chr]
                 mask_ints = pd.IntervalIndex.from_arrays(sub[1], sub[2])
                 simulated_genome_length -= np.sum(mask_ints.length)
-        plots.plot_fsc_results_human_IM(input[0], output, simulated_genome_length)
+        plots3.plot_fsc_results_human_IM(input[0], output, simulated_genome_length, T_Div)
 
 rule clean:
     shell:
         f"rm -rf {output_dir}/Intermediate \
             {output_dir}/Results \
             .genetic_map_downloaded \
-            .snakemake"		
-		
-		
-		
+            .snakemake"
