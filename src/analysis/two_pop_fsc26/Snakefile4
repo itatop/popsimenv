@@ -50,11 +50,11 @@ for i in range(len(model.demographic_events)):
 	if e.type == "mass_migration":
 		if e.source == 1 and e.dest == 0 and e.proportion == 1.0:
 			model.demographic_events[i].time = T_Div
-			print(e.time * 25)
+			print(model.demographic_events[i].time * 25)
 	if e.type == "population_parameters_change":
 		if e.initial_size == 7300 and e.population == 0:
 			model.demographic_events[i].time = T_AF
-			print(e.time * 25)
+			print(model.demographic_events[i].time * 25)
 	
 
 # The genetic map you would like to use.

@@ -3,8 +3,8 @@ Simulation parameters for current simulations
 
 
 Deme sizes
-Deme 0	58536
-Deme 1	48319
+Deme 0	3196
+Deme 1	98891
 
 
 Sample sizes
@@ -22,8 +22,8 @@ Deme 1	0
 
 Migration matrix
 Note that migration rates have been pre-multiplied by factor TDemeCollection::CTTimeUnit (1e+06)
- 0.0000000  3.9492158 
- 3.0343759  0.0000000 
+ 0.0000000 25.0805528 
+20.5858901  0.0000000 
 
 
 Migration matrix
@@ -35,11 +35,11 @@ Note that migration rates have been pre-multiplied by factor TDemeCollection::CT
 Historical events
 Event 0
 
-#Time             : 16473
+#Time             : 14831
 #Source           : 0
 #Sink             : 1
 #Migrants         : 1.0000000
-#New size         : 1.9119187
+#New size         : 0.7648623
 #New growth rate  : 0.0000000
 #New migr. matrix : 1
 

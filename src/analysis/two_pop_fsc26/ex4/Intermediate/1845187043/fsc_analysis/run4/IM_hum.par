@@ -1,8 +1,8 @@
 //Parameters for the coalescence simulation program : simcoal.exe
 2 samples to simulate :
 //Population effective sizes (number of genes)
-183
-60916
+36835
+35977
 //Samples sizes
 10
 10
@@ -12,14 +12,14 @@
 //Number of migration matrices : 0 implies no migration between demes
 2
 //Migration matrix 0
-0 5.509960709198375e-06
-1.272057661708872e-03 0
+0 2.137253947381514e-05
+3.865799465497658e-05 0
 //Migration matrix 1
 0 0
 0 0
 //historical event: time, source, sink, migrants, new deme size, growth rate, migr mat index
 1 historical event
-19776 0 1 1 1.028646004333837e+00 0 1
+3177 0 1 1 1.039664229924674e+00 0 1
 //Number of independent loci [chromosome]
 1 0
 //Per chromosome: Number of contiguous linkage Block: a block is a set of contiguous loci

@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	dadi_sfs_to_fsc
+	1	fsc_setup
+	1	get_best_fsc_runs
+	1	get_fsc_output
+	1	plot_estimates
+	1	run_fsc
+	1	simulation
+	1	ts_to_dadi_sfs
+	9
+Select jobs to execute...
+
+[Mon Jan 25 06:07:54 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: ex6/Intermediate/1845187043/chr22.trees
+    jobid: 8
+    wildcards: seeds=1845187043, chrms=chr22
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/two_pop_fsc26/.snakemake/log/2021-01-25T060751.292446.snakemake.log
