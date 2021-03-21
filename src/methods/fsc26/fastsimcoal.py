@@ -65,3 +65,15 @@ def get_best_fsc_runs(indir,seeds,outfile):
                     ofile.write(file[0])
                 header_count =+1
                 ofile.write(file[1])
+
+
+def get_best_fsc_runs_general(indir,outfile):
+
+    header_count = 0
+    with open(outfile, 'w') as ofile:
+        with open(indir + "/fsc_analysis/fsc_results_sorted.txt") as infile:
+            file = infile.readlines()
+            if header_count == 0:
+                ofile.write(file[0])
+            header_count =+1
+            ofile.write(file[1])
