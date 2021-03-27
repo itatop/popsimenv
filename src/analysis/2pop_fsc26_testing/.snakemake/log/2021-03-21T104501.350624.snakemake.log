@@ -1,0 +1,3 @@
+NameError in line 46 of /code/src/analysis/2pop_fsc26_testing/Snakefile:
+name 'model_reg' is not defined
+  File "/code/src/analysis/2pop_fsc26_testing/Snakefile", line 46, in <module>

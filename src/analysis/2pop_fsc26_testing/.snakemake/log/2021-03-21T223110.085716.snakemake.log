@@ -1,0 +1,165 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	get_best_fsc_runs
+	6	plot_estimates
+	13
+Select jobs to execute...
+
+[Sun Mar 21 22:31:13 2021]
+rule get_best_fsc_runs:
+    input: experiment/1845187043_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment1845187043_reg/Results/best_fsc_runs.txt
+    jobid: 2
+    wildcards: seeds=1845187043, model_mode=reg
+
+[Sun Mar 21 22:31:16 2021]
+Finished job 2.
+1 of 13 steps (8%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:16 2021]
+rule get_best_fsc_runs:
+    input: experiment/1845187043_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment1675701734_reg/Results/best_fsc_runs.txt
+    jobid: 41
+    wildcards: seeds=1675701734, model_mode=reg
+
+[Sun Mar 21 22:31:20 2021]
+Finished job 41.
+2 of 13 steps (15%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:20 2021]
+rule get_best_fsc_runs:
+    input: experiment/1845187043_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment1675701734_lo/Results/best_fsc_runs.txt
+    jobid: 49
+    wildcards: seeds=1675701734, model_mode=lo
+
+[Sun Mar 21 22:31:24 2021]
+Finished job 49.
+3 of 13 steps (23%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:24 2021]
+rule plot_estimates:
+    input: experiment1675701734_lo/Results/best_fsc_runs.txt
+    output: experiment/1675701734_lo/Results/estimates_N_tdiv_fsc.png, experiment/1675701734_lo/Results/estimates_mig_fsc.png
+    jobid: 48
+    wildcards: seeds=1675701734, model_mode=lo
+
+[Sun Mar 21 22:31:30 2021]
+Finished job 48.
+4 of 13 steps (31%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:30 2021]
+rule get_best_fsc_runs:
+    input: experiment/1845187043_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment1845187043_lo/Results/best_fsc_runs.txt
+    jobid: 47
+    wildcards: seeds=1845187043, model_mode=lo
+
+[Sun Mar 21 22:31:34 2021]
+Finished job 47.
+5 of 13 steps (38%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:34 2021]
+rule plot_estimates:
+    input: experiment1845187043_lo/Results/best_fsc_runs.txt
+    output: experiment/1845187043_lo/Results/estimates_N_tdiv_fsc.png, experiment/1845187043_lo/Results/estimates_mig_fsc.png
+    jobid: 46
+    wildcards: seeds=1845187043, model_mode=lo
+
+[Sun Mar 21 22:31:39 2021]
+Finished job 46.
+6 of 13 steps (46%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:39 2021]
+rule get_best_fsc_runs:
+    input: experiment/1845187043_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment1675701734_hi/Results/best_fsc_runs.txt
+    jobid: 45
+    wildcards: seeds=1675701734, model_mode=hi
+
+[Sun Mar 21 22:31:44 2021]
+Finished job 45.
+7 of 13 steps (54%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:44 2021]
+rule plot_estimates:
+    input: experiment1675701734_hi/Results/best_fsc_runs.txt
+    output: experiment/1675701734_hi/Results/estimates_N_tdiv_fsc.png, experiment/1675701734_hi/Results/estimates_mig_fsc.png
+    jobid: 44
+    wildcards: seeds=1675701734, model_mode=hi
+
+[Sun Mar 21 22:31:50 2021]
+Finished job 44.
+8 of 13 steps (62%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:50 2021]
+rule get_best_fsc_runs:
+    input: experiment/1845187043_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1845187043_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/1675701734_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment1845187043_hi/Results/best_fsc_runs.txt
+    jobid: 43
+    wildcards: seeds=1845187043, model_mode=hi
+
+[Sun Mar 21 22:31:54 2021]
+Finished job 43.
+9 of 13 steps (69%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:54 2021]
+rule plot_estimates:
+    input: experiment1845187043_reg/Results/best_fsc_runs.txt
+    output: experiment/1845187043_reg/Results/estimates_N_tdiv_fsc.png, experiment/1845187043_reg/Results/estimates_mig_fsc.png
+    jobid: 1
+    wildcards: seeds=1845187043, model_mode=reg
+
+[Sun Mar 21 22:31:59 2021]
+Finished job 1.
+10 of 13 steps (77%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:31:59 2021]
+rule plot_estimates:
+    input: experiment1675701734_reg/Results/best_fsc_runs.txt
+    output: experiment/1675701734_reg/Results/estimates_N_tdiv_fsc.png, experiment/1675701734_reg/Results/estimates_mig_fsc.png
+    jobid: 40
+    wildcards: seeds=1675701734, model_mode=reg
+
+[Sun Mar 21 22:32:03 2021]
+Finished job 40.
+11 of 13 steps (85%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:32:03 2021]
+rule plot_estimates:
+    input: experiment1845187043_hi/Results/best_fsc_runs.txt
+    output: experiment/1845187043_hi/Results/estimates_N_tdiv_fsc.png, experiment/1845187043_hi/Results/estimates_mig_fsc.png
+    jobid: 42
+    wildcards: seeds=1845187043, model_mode=hi
+
+[Sun Mar 21 22:32:08 2021]
+Finished job 42.
+12 of 13 steps (92%) done
+Select jobs to execute...
+
+[Sun Mar 21 22:32:08 2021]
+localrule all:
+    input: experiment/1845187043_reg/Results/estimates_N_tdiv_fsc.png, experiment/1675701734_reg/Results/estimates_N_tdiv_fsc.png, experiment/1845187043_hi/Results/estimates_N_tdiv_fsc.png, experiment/1675701734_hi/Results/estimates_N_tdiv_fsc.png, experiment/1845187043_lo/Results/estimates_N_tdiv_fsc.png, experiment/1675701734_lo/Results/estimates_N_tdiv_fsc.png, experiment/1845187043_reg/Results/estimates_mig_fsc.png, experiment/1675701734_reg/Results/estimates_mig_fsc.png, experiment/1845187043_hi/Results/estimates_mig_fsc.png, experiment/1675701734_hi/Results/estimates_mig_fsc.png, experiment/1845187043_lo/Results/estimates_mig_fsc.png, experiment/1675701734_lo/Results/estimates_mig_fsc.png
+    jobid: 0
+
+[Sun Mar 21 22:32:08 2021]
+Finished job 0.
+13 of 13 steps (100%) done
+Complete log: /code/src/analysis/2pop_fsc26_testing/.snakemake/log/2021-03-21T223110.085716.snakemake.log
