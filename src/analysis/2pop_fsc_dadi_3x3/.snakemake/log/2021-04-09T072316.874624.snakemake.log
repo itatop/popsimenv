@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	9	dadi_sfs_to_fsc
+	90	fit_dadi_model_to_msprime_sfs
+	9	fsc_setup
+	9	get_best_dadi_fsc_runs
+	9	get_dadi_fsc_output
+	9	plot_estimates
+	9	run_fsc
+	145
+Select jobs to execute...
+
+[Fri Apr  9 07:23:25 2021]
+rule fit_dadi_model_to_msprime_sfs:
+    input: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs.fs, experiment/reg/1358822686/Intermediate/chr22_dadi_joint_sfs.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs.fs, experiment/high/1358822686/Intermediate/chr22_dadi_joint_sfs.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs.fs, experiment/low/1358822686/Intermediate/chr22_dadi_joint_sfs.fs
+    output: experiment/low/1358822686/Intermediate/dadi_analysis/IM_fsc/model_fit_2557845021.pdf, experiment/low/1358822686/Intermediate/dadi_analysis/IM_fsc/model_params_2557845021.txt
+    jobid: 106
+    wildcards: model_mode=low, seeds=1358822686, demo_model=IM_fsc, fit_seeds=2557845021
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/2pop_fsc_dadi_3x3/.snakemake/log/2021-04-09T072316.874624.snakemake.log

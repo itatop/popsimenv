@@ -1,2 +1,0 @@
-model modes dict -> replace in simulation & ploting
-Push
