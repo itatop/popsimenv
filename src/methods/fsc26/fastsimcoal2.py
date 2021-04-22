@@ -61,12 +61,11 @@ def get_best_fsc_run(path_to_fsc_analysis,outfile):
         with open(path_to_fsc_analysis+ "/fsc_results_sorted.txt") as infile:
             file = infile.readlines()
             ofile.write(file[0])
-            '''
             if header_count == 0:
                 ofile.write(file[0])
             header_count =+1
             ofile.write(file[1])
-            '''
+            
 
 def get_best_fsc_run_general(path_to_fsc_analysis,outfile):
 
