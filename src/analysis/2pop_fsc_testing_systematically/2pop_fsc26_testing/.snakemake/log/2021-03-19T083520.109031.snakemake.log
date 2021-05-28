@@ -1,2 +1,0 @@
-SyntaxError in line 120 of /code/src/analysis/2pop_fsc26_testing/Snakefile:
-Unexpected keyword output_dir in rule definition (Snakefile, line 120)

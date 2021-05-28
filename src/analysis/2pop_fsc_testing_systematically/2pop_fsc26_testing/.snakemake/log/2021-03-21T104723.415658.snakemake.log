@@ -1,3 +1,0 @@
-NameError in line 290 of /code/src/analysis/2pop_fsc26_testing/Snakefile:
-name 'seeds' is not defined
-  File "/code/src/analysis/2pop_fsc26_testing/Snakefile", line 290, in <module>

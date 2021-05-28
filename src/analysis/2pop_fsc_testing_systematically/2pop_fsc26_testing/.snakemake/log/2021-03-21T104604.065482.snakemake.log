@@ -1,3 +1,0 @@
-WildcardError in line 180 of /code/src/analysis/2pop_fsc26_testing/Snakefile:
-No values given for wildcard 'model_mode'.
-  File "/code/src/analysis/2pop_fsc26_testing/Snakefile", line 180, in <module>

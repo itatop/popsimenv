@@ -1,3 +1,0 @@
-CreateRuleException in line 269 of /code/src/analysis/2pop_fsc_dadi_3x3/Snakefile:
-The name get_best_dadi_fsc_runs is already used by another rule
-  File "/code/src/analysis/2pop_fsc_dadi_3x3/Snakefile", line 269, in <module>
