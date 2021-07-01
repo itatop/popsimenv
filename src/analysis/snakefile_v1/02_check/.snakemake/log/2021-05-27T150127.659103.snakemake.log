@@ -1,0 +1,3 @@
+SyntaxError in line 5 of /code/src/analysis/snakefile_v1/check_02/params_extractor.py:
+invalid syntax (params_extractor.py, line 5)
+  File "/code/src/analysis/snakefile_v1/check_02/Snakefile", line 20, in <module>

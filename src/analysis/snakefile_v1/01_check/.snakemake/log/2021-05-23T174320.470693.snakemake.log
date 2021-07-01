@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	plot_estimates
+	2
+Select jobs to execute...
+
+[Sun May 23 17:43:23 2021]
+rule plot_estimates:
+    input: experiment/high/1845187043/Results/best_fsc_run.txt
+    output: experiment/high/1845187043/Results/estimates_N_tdiv_fsc.png, experiment/high/1845187043/Results/estimates_mig_fsc.png
+    jobid: 10
+    wildcards: model_mode=high, seeds=1845187043
+
+[Sun May 23 17:43:28 2021]
+Finished job 10.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Sun May 23 17:43:28 2021]
+localrule all:
+    input: experiment/regular/1845187043/Results/estimates_N_tdiv_fsc.png, experiment/high/1845187043/Results/estimates_N_tdiv_fsc.png, experiment/regular/1845187043/Results/estimates_mig_fsc.png, experiment/high/1845187043/Results/estimates_mig_fsc.png
+    jobid: 0
+
+[Sun May 23 17:43:28 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /code/src/analysis/new_changer_check/.snakemake/log/2021-05-23T174320.470693.snakemake.log

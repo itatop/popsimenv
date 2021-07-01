@@ -1,0 +1,496 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	dadi_sfs_to_fsc
+	6	fsc_setup
+	6	get_best_fsc_runs
+	6	get_fsc_output
+	6	plot_estimates
+	6	run_fsc
+	6	simulation
+	6	ts_to_dadi_sfs
+	49
+Select jobs to execute...
+
+[Thu Apr  8 04:29:11 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/reg/1675701734/Intermediate/chr22.trees
+    jobid: 11
+    wildcards: model_mode=reg, seeds=1675701734, chrms=chr22
+
+[Thu Apr  8 04:30:48 2021]
+Finished job 11.
+1 of 49 steps (2%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:30:48 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/low/1675701734/Intermediate/chr22.trees
+    jobid: 19
+    wildcards: model_mode=low, seeds=1675701734, chrms=chr22
+
+[Thu Apr  8 04:31:41 2021]
+Finished job 19.
+2 of 49 steps (4%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:31:41 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/low/1845187043/Intermediate/chr22.trees
+    jobid: 17
+    wildcards: model_mode=low, seeds=1845187043, chrms=chr22
+
+[Thu Apr  8 04:32:28 2021]
+Finished job 17.
+3 of 49 steps (6%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:32:28 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/reg/1675701734/Intermediate/chr22.trees
+    output: experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 10
+    wildcards: model_mode=reg, seeds=1675701734, chrms=chr22
+
+[Thu Apr  8 04:32:38 2021]
+Finished job 10.
+4 of 49 steps (8%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:32:38 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/reg/1845187043/Intermediate/chr22.trees
+    jobid: 8
+    wildcards: model_mode=reg, seeds=1845187043, chrms=chr22
+
+[Thu Apr  8 04:33:19 2021]
+Finished job 8.
+5 of 49 steps (10%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:33:19 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/reg/1845187043/Intermediate/chr22.trees
+    output: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs.fs, experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 7
+    wildcards: model_mode=reg, seeds=1845187043, chrms=chr22
+
+[Thu Apr  8 04:33:28 2021]
+Finished job 7.
+6 of 49 steps (12%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:33:28 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/low/1675701734/Intermediate/chr22.trees
+    output: experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 18
+    wildcards: model_mode=low, seeds=1675701734, chrms=chr22
+
+[Thu Apr  8 04:33:35 2021]
+Finished job 18.
+7 of 49 steps (14%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:33:35 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/low/1845187043/Intermediate/chr22.trees
+    output: experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 16
+    wildcards: model_mode=low, seeds=1845187043, chrms=chr22
+
+[Thu Apr  8 04:33:45 2021]
+Finished job 16.
+8 of 49 steps (16%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:33:45 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/high/1845187043/Intermediate/chr22.trees
+    jobid: 13
+    wildcards: model_mode=high, seeds=1845187043, chrms=chr22
+
+[Thu Apr  8 04:34:22 2021]
+Finished job 13.
+9 of 49 steps (18%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:34:22 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/high/1675701734/Intermediate/chr22.trees
+    jobid: 15
+    wildcards: model_mode=high, seeds=1675701734, chrms=chr22
+
+[Thu Apr  8 04:35:01 2021]
+Finished job 15.
+10 of 49 steps (20%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:01 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/high/1675701734/Intermediate/chr22.trees
+    output: experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 14
+    wildcards: model_mode=high, seeds=1675701734, chrms=chr22
+
+[Thu Apr  8 04:35:08 2021]
+Finished job 14.
+11 of 49 steps (22%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:08 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/high/1845187043/Intermediate/chr22.trees
+    output: experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 12
+    wildcards: model_mode=high, seeds=1845187043, chrms=chr22
+
+[Thu Apr  8 04:35:15 2021]
+Finished job 12.
+12 of 49 steps (24%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:15 2021]
+rule dadi_sfs_to_fsc:
+    input: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    output: experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    jobid: 23
+    wildcards: model_mode=low, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 04:35:18 2021]
+Finished job 23.
+13 of 49 steps (27%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:18 2021]
+rule dadi_sfs_to_fsc:
+    input: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    output: experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    jobid: 21
+    wildcards: model_mode=high, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 04:35:21 2021]
+Finished job 21.
+14 of 49 steps (29%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:21 2021]
+rule dadi_sfs_to_fsc:
+    input: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    output: experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    jobid: 24
+    wildcards: model_mode=low, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 04:35:24 2021]
+Finished job 24.
+15 of 49 steps (31%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:24 2021]
+rule dadi_sfs_to_fsc:
+    input: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    output: experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    jobid: 22
+    wildcards: model_mode=high, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 04:35:28 2021]
+Finished job 22.
+16 of 49 steps (33%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:28 2021]
+rule dadi_sfs_to_fsc:
+    input: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    output: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    jobid: 6
+    wildcards: model_mode=reg, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 04:35:31 2021]
+Finished job 6.
+17 of 49 steps (35%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:31 2021]
+rule dadi_sfs_to_fsc:
+    input: experiment/reg/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/reg/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/high/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1845187043/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/low/1675701734/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    output: experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    jobid: 20
+    wildcards: model_mode=reg, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 04:35:34 2021]
+Finished job 20.
+18 of 49 steps (37%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:34 2021]
+rule fsc_setup:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    output: experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.est, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    jobid: 25
+    wildcards: model_mode=reg, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 04:35:34 2021]
+Finished job 25.
+19 of 49 steps (39%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:34 2021]
+rule fsc_setup:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    output: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.est, experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.tpl
+    jobid: 5
+    wildcards: model_mode=reg, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 04:35:34 2021]
+Finished job 5.
+20 of 49 steps (41%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:34 2021]
+rule fsc_setup:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    output: experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.est, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.tpl
+    jobid: 26
+    wildcards: model_mode=high, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 04:35:35 2021]
+Finished job 26.
+21 of 49 steps (43%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:35 2021]
+rule fsc_setup:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    output: experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.est, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    jobid: 29
+    wildcards: model_mode=low, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 04:35:35 2021]
+Finished job 29.
+22 of 49 steps (45%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:35 2021]
+rule fsc_setup:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    output: experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.est, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    jobid: 27
+    wildcards: model_mode=high, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 04:35:35 2021]
+Finished job 27.
+23 of 49 steps (47%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:35 2021]
+rule fsc_setup:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    output: experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.est, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.tpl
+    jobid: 28
+    wildcards: model_mode=low, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 04:35:35 2021]
+Finished job 28.
+24 of 49 steps (49%) done
+Select jobs to execute...
+
+[Thu Apr  8 04:35:35 2021]
+rule run_fsc:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    output: experiment/low/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    jobid: 33
+    wildcards: model_mode=low, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 06:19:41 2021]
+Finished job 33.
+25 of 49 steps (51%) done
+Select jobs to execute...
+
+[Thu Apr  8 06:19:41 2021]
+rule run_fsc:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    output: experiment/high/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    jobid: 31
+    wildcards: model_mode=high, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 08:09:01 2021]
+Finished job 31.
+26 of 49 steps (53%) done
+Select jobs to execute...
+
+[Thu Apr  8 08:09:01 2021]
+rule run_fsc:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    output: experiment/reg/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    jobid: 4
+    wildcards: model_mode=reg, seeds=1845187043, demo_model=IM_hum
+
+[Thu Apr  8 09:57:27 2021]
+Finished job 4.
+27 of 49 steps (55%) done
+Select jobs to execute...
+
+[Thu Apr  8 09:57:28 2021]
+rule run_fsc:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    output: experiment/high/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    jobid: 32
+    wildcards: model_mode=high, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 11:35:17 2021]
+Finished job 32.
+28 of 49 steps (57%) done
+Select jobs to execute...
+
+[Thu Apr  8 11:35:18 2021]
+rule run_fsc:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    output: experiment/low/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    jobid: 34
+    wildcards: model_mode=low, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 12:59:24 2021]
+Finished job 34.
+29 of 49 steps (59%) done
+Select jobs to execute...
+
+[Thu Apr  8 12:59:24 2021]
+rule run_fsc:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/reg/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/high/1675701734/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1845187043/Intermediate/fsc_analysis/IM_hum.tpl, experiment/low/1675701734/Intermediate/fsc_analysis/IM_hum.tpl
+    output: experiment/reg/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    jobid: 30
+    wildcards: model_mode=reg, seeds=1675701734, demo_model=IM_hum
+
+[Thu Apr  8 14:24:54 2021]
+Finished job 30.
+30 of 49 steps (61%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:24:54 2021]
+rule get_fsc_output:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/reg/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    output: experiment/low/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    jobid: 39
+    wildcards: model_mode=low, seeds=1675701734
+
+[Thu Apr  8 14:25:03 2021]
+Finished job 39.
+31 of 49 steps (63%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:03 2021]
+rule get_fsc_output:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/reg/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    output: experiment/high/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    jobid: 37
+    wildcards: model_mode=high, seeds=1675701734
+
+[Thu Apr  8 14:25:07 2021]
+Finished job 37.
+32 of 49 steps (65%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:07 2021]
+rule get_fsc_output:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/reg/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    output: experiment/reg/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    jobid: 3
+    wildcards: model_mode=reg, seeds=1845187043
+
+[Thu Apr  8 14:25:12 2021]
+Finished job 3.
+33 of 49 steps (67%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:12 2021]
+rule get_fsc_output:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/reg/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    output: experiment/low/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    jobid: 38
+    wildcards: model_mode=low, seeds=1845187043
+
+[Thu Apr  8 14:25:17 2021]
+Finished job 38.
+34 of 49 steps (69%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:17 2021]
+rule get_fsc_output:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/reg/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    output: experiment/reg/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    jobid: 35
+    wildcards: model_mode=reg, seeds=1675701734
+
+[Thu Apr  8 14:25:22 2021]
+Finished job 35.
+35 of 49 steps (71%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:22 2021]
+rule get_fsc_output:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/reg/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/high/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1845187043/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods, experiment/low/1675701734/Intermediate/fsc_analysis/run10/IM_hum/IM_hum.bestlhoods
+    output: experiment/high/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    jobid: 36
+    wildcards: model_mode=high, seeds=1845187043
+
+[Thu Apr  8 14:25:26 2021]
+Finished job 36.
+36 of 49 steps (73%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:26 2021]
+rule get_best_fsc_runs:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/reg/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/high/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/high/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/low/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/low/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment/low/1675701734/Results/best_fsc_runs.txt
+    jobid: 49
+    wildcards: model_mode=low, seeds=1675701734
+
+[Thu Apr  8 14:25:29 2021]
+Finished job 49.
+37 of 49 steps (76%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:29 2021]
+rule get_best_fsc_runs:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/reg/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/high/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/high/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/low/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/low/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment/low/1845187043/Results/best_fsc_runs.txt
+    jobid: 47
+    wildcards: model_mode=low, seeds=1845187043
+
+[Thu Apr  8 14:25:34 2021]
+Finished job 47.
+38 of 49 steps (78%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:34 2021]
+rule get_best_fsc_runs:
+    input: experiment/reg/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/reg/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/high/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/high/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/low/1845187043/Intermediate/fsc_analysis/fsc_results_sorted.txt, experiment/low/1675701734/Intermediate/fsc_analysis/fsc_results_sorted.txt
+    output: experiment/high/1675701734/Results/best_fsc_runs.txt
+    jobid: 45
+    wildcards: model_mode=high, seeds=1675701734
+
+[Thu Apr  8 14:25:38 2021]
+Finished job 45.
+39 of 49 steps (80%) done
+Select jobs to execute...
+
+[Thu Apr  8 14:25:38 2021]
+rule plot_estimates:
+    input: experiment/low/1675701734/Results/best_fsc_runs.txt
+    output: experiment/low/1675701734/Results/estimates_N_tdiv_fsc.png, experiment/low/1675701734/Results/estimates_mig_fsc.png
+    jobid: 48
+    wildcards: model_mode=low, seeds=1675701734
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/2pop_fsc26_testing_2/.snakemake/log/2021-04-08T042907.582679.snakemake.log

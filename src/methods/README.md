@@ -2,5 +2,4 @@
 
 Methods we use in the experiments.
 
-> each sub-dir has needed files for running a simulation of a specific methods.
-> including bin files, supplementory files and further reading.
+> including generic bin files, supplementory files, functions we created and further reading about methods \ others.

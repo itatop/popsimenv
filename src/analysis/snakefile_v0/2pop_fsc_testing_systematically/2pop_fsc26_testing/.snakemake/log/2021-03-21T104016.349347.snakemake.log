@@ -1,0 +1,2 @@
+SyntaxError in line 278 of /code/src/analysis/2pop_fsc26_testing/Snakefile:
+No rule keywords allowed after run/shell/script/wrapper/cwl in rule plot_estimates. (Snakefile, line 278)

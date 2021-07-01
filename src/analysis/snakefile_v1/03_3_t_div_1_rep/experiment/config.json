@@ -1,0 +1,26 @@
+{
+    "seed" : 12345,
+    "num_samples_per_population" : [
+        10, 10, 0
+    ],
+    "replicates" : 1,
+    "species" : "HomSap",
+    "model" : "OutOfAfrica_3G09",
+    "genetic_map" : "HapMapII_GRCh37",
+    "chrm_list" : "chr22",
+    "mask_file" : "masks/HapmapII_GRCh37.mask.bed",
+    "model_modes_dict" : {
+        "regular" : [
+        ],
+        
+        "high" : [
+            [5, "time", 200e3],
+            [6, "time", 200e3]
+        ],
+		
+		"low" : [
+            [5, "time", 80e3],
+            [6, "time", 80e3]
+        ]
+    }
+}

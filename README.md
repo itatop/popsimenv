@@ -1,6 +1,6 @@
 # popsimenv
 
-This is a private testing repository for creating testing environments - for running population genetics simulations using the stdpopsim open-source library.
+This is a private testing repository for creating a testing environment for running population genetics simulations using the stdpopsim open-source library.
 The original testing repository popsim-consortium/analysis is copied and modified to our objectives.
 For further reading see:
 
@@ -23,15 +23,15 @@ https://git-scm.com/downloads
 
 https://www.docker.com/products/docker-desktop
 
-The Dockerfile takes care to all the installations and dependencies required. just follow the 'usage' section below.
+The Dockerfile takes care of all the installations and dependencies required. just follow the 'usage' section below.
 
 # usage:
 
-one time only:
+first time only:
 
-1. Install the popsimenv directory with git.
+1. Clone the popsimenv directory from git (current page if you are reading these lines from the popsimenv repository)
 
-2. Inside this directory, run the following bash command to build the image docker using the Dockerfile:
+2. Inside popsimenv directory, run the following command to build the image docker using the Dockerfile:
     ```bash
     docker build -t popsimenv-image .
     ```
@@ -40,7 +40,7 @@ Opening a working session:
 
 1. Open Docker Desktop app.
 
-2. Inside this directory, run the container interactively with the src folder as shared volume:
+2. Inside popsimenv directory, run the container interactively with the src folder as shared volume:
 
 * for Mac/Linux users:
     ```bash
@@ -53,7 +53,7 @@ Opening a working session:
     docker run --rm -t -i --name popsimenv --mount type=bind,source=%cd%/src,target=/code/src popsimenv-image //bin/bash
     ```
 
-3. Activate the conda enviroment:
+3. Activate the conda environment:
     ```bash
     conda activate popsim_env_test
     ```
@@ -63,7 +63,7 @@ Opening a working session:
     ```
 
 Running Snakefile:
-1. for example: (run from two_population_analysis)
+1. for example: (run from a directory of an experiment, as in the template directory)
     ```bash
     snakemake -j 1 --config config="experiment"
     ```

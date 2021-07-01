@@ -1,0 +1,3 @@
+WildcardError in line 242 of /code/src/analysis/2pop_fsc26_testing/Snakefile:
+No values given for wildcard 'demo_model'.
+  File "/code/src/analysis/2pop_fsc26_testing/Snakefile", line 242, in <module>

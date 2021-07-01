@@ -1,0 +1,172 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	dadi_sfs_to_fsc
+	6	fsc_setup
+	6	get_best_fsc_runs
+	6	get_fsc_output
+	6	plot_estimates
+	6	run_fsc
+	6	simulation
+	6	ts_to_dadi_sfs
+	49
+Select jobs to execute...
+
+[Sun Mar 21 10:57:31 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/1845187043_reg/Intermediate/chr22.trees
+    jobid: 8
+    wildcards: seeds=1845187043, model_mode=reg, chrms=chr22
+
+[Sun Mar 21 10:58:22 2021]
+Finished job 8.
+1 of 49 steps (2%) done
+Select jobs to execute...
+
+[Sun Mar 21 10:58:22 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/1845187043_hi/Intermediate/chr22.trees
+    jobid: 13
+    wildcards: seeds=1845187043, model_mode=hi, chrms=chr22
+
+[Sun Mar 21 10:59:14 2021]
+Finished job 13.
+2 of 49 steps (4%) done
+Select jobs to execute...
+
+[Sun Mar 21 10:59:14 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/1675701734_reg/Intermediate/chr22.trees
+    jobid: 11
+    wildcards: seeds=1675701734, model_mode=reg, chrms=chr22
+
+[Sun Mar 21 11:00:11 2021]
+Finished job 11.
+3 of 49 steps (6%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:00:11 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/1675701734_reg/Intermediate/chr22.trees
+    output: experiment/1675701734_reg/Intermediate/chr22_dadi_joint_sfs.fs, experiment/1675701734_reg/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 10
+    wildcards: seeds=1675701734, model_mode=reg, chrms=chr22
+
+[Sun Mar 21 11:00:22 2021]
+Finished job 10.
+4 of 49 steps (8%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:00:22 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/1845187043_reg/Intermediate/chr22.trees
+    output: experiment/1845187043_reg/Intermediate/chr22_dadi_joint_sfs.fs, experiment/1845187043_reg/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 7
+    wildcards: seeds=1845187043, model_mode=reg, chrms=chr22
+
+[Sun Mar 21 11:00:31 2021]
+Finished job 7.
+5 of 49 steps (10%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:00:31 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/1845187043_lo/Intermediate/chr22.trees
+    jobid: 17
+    wildcards: seeds=1845187043, model_mode=lo, chrms=chr22
+
+[Sun Mar 21 11:01:19 2021]
+Finished job 17.
+6 of 49 steps (12%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:01:19 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/1845187043_lo/Intermediate/chr22.trees
+    output: experiment/1845187043_lo/Intermediate/chr22_dadi_joint_sfs.fs, experiment/1845187043_lo/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 16
+    wildcards: seeds=1845187043, model_mode=lo, chrms=chr22
+
+[Sun Mar 21 11:01:28 2021]
+Finished job 16.
+7 of 49 steps (14%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:01:28 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/1675701734_hi/Intermediate/chr22.trees
+    jobid: 15
+    wildcards: seeds=1675701734, model_mode=hi, chrms=chr22
+
+[Sun Mar 21 11:02:15 2021]
+Finished job 15.
+8 of 49 steps (16%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:02:15 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/1675701734_hi/Intermediate/chr22.trees
+    output: experiment/1675701734_hi/Intermediate/chr22_dadi_joint_sfs.fs, experiment/1675701734_hi/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 14
+    wildcards: seeds=1675701734, model_mode=hi, chrms=chr22
+
+[Sun Mar 21 11:02:24 2021]
+Finished job 14.
+9 of 49 steps (18%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:02:24 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/1845187043_hi/Intermediate/chr22.trees
+    output: experiment/1845187043_hi/Intermediate/chr22_dadi_joint_sfs.fs, experiment/1845187043_hi/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 12
+    wildcards: seeds=1845187043, model_mode=hi, chrms=chr22
+
+[Sun Mar 21 11:02:33 2021]
+Finished job 12.
+10 of 49 steps (20%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:02:33 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/1675701734_lo/Intermediate/chr22.trees
+    jobid: 19
+    wildcards: seeds=1675701734, model_mode=lo, chrms=chr22
+
+[Sun Mar 21 11:03:21 2021]
+Finished job 19.
+11 of 49 steps (22%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:03:21 2021]
+rule ts_to_dadi_sfs:
+    input: experiment/1675701734_lo/Intermediate/chr22.trees
+    output: experiment/1675701734_lo/Intermediate/chr22_dadi_joint_sfs.fs, experiment/1675701734_lo/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    jobid: 18
+    wildcards: seeds=1675701734, model_mode=lo, chrms=chr22
+
+[Sun Mar 21 11:03:32 2021]
+Finished job 18.
+12 of 49 steps (24%) done
+Select jobs to execute...
+
+[Sun Mar 21 11:03:32 2021]
+rule dadi_sfs_to_fsc:
+    input: experiment/1845187043_reg/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/1675701734_reg/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/1845187043_hi/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/1675701734_hi/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/1845187043_lo/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs, experiment/1675701734_lo/Intermediate/chr22_dadi_joint_sfs_with_nonvariant.fs
+    output: experiment/1675701734_lo/Intermediate/fsc_analysis/IM_hum_jointDAFpop1_0.obs
+    jobid: 24
+    wildcards: seeds=1675701734, model_mode=lo, demo_model=IM_hum
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/2pop_fsc26_testing/.snakemake/log/2021-03-21T105727.869152.snakemake.log

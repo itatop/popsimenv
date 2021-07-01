@@ -1,0 +1,2 @@
+SyntaxError in line 256 of /code/src/analysis/2pop_fsc_dadi_3x3/Snakefile:
+EOF in multi-line statement (Snakefile, line 256)

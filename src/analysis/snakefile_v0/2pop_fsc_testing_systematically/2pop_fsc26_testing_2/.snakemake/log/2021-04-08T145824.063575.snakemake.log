@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	3	get_best_fsc_runs
+	6	plot_estimates
+	10
+Select jobs to execute...
+
+[Thu Apr  8 14:58:27 2021]
+rule plot_estimates:
+    input: experiment/low/1675701734/Results/best_fsc_runs.txt
+    output: experiment/low/1675701734/Results/estimates_N_tdiv_fsc.png, experiment/low/1675701734/Results/estimates_mig_fsc.png
+    jobid: 48
+    wildcards: model_mode=low, seeds=1675701734
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/2pop_fsc26_testing_2/.snakemake/log/2021-04-08T145824.063575.snakemake.log

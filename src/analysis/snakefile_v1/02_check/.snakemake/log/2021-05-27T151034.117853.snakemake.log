@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	dadi_sfs_to_fsc
+	1	download_genetic_map
+	2	fsc_setup
+	2	get_best_fsc_run
+	2	get_fsc_output
+	2	plot_estimates
+	2	run_fsc
+	2	simulation
+	2	ts_to_dadi_sfs
+	18
+Select jobs to execute...
+
+[Thu May 27 15:10:37 2021]
+Job 9: Downloading default genetic map
+
+[Thu May 27 15:11:10 2021]
+Finished job 9.
+1 of 18 steps (6%) done
+Select jobs to execute...
+
+[Thu May 27 15:11:10 2021]
+rule simulation:
+    input: .genetic_map_downloaded
+    output: experiment/high/1845187043/Intermediate/chr22.trees
+    jobid: 17
+    wildcards: model_mode=high, seeds=1845187043
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/snakefile_v1/check_02/.snakemake/log/2021-05-27T151034.117853.snakemake.log

@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	compound_smcpp
+	1	dadi_sfs_to_fsc
+	1	download_genetic_map
+	10	fit_dadi_model_to_msprime_sfs
+	1	fsc_setup
+	1	get_best_dadi_fsc_runs
+	1	get_dadi_fsc_output
+	1	plot_estimates
+	1	run_fsc
+	1	run_smcpp
+	1	simulation
+	1	smcpp_plot
+	1	ts_to_dadi_sfs
+	1	ts_to_smc
+	24
+
+[Sat Nov 14 08:35:42 2020]
+Job 7: Downloading default genetic map
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /code/src/analysis/two_population_analysis/.snakemake/log/2020-11-14T083539.486036.snakemake.log
