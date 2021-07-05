@@ -1,9 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 252 of /code/src/analysis/2pop_fsc26_testing/Snakefile:
-Missing input files for rule get_best_fsc_runs:
-experiment1675701734_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt
-experiment1845187043_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt
-experiment1675701734_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt
-experiment1675701734_reg/Intermediate/fsc_analysis/fsc_results_sorted.txt
-experiment1845187043_hi/Intermediate/fsc_analysis/fsc_results_sorted.txt
-experiment1845187043_lo/Intermediate/fsc_analysis/fsc_results_sorted.txt

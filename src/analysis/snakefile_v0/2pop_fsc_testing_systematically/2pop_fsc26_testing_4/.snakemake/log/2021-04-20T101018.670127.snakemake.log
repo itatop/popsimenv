@@ -1,3 +1,0 @@
-KeyError in line 19 of /code/src/analysis/2pop_fsc_testing_systematically/2pop_fsc26_testing_4/Snakefile:
-'config'
-  File "/code/src/analysis/2pop_fsc_testing_systematically/2pop_fsc26_testing_4/Snakefile", line 19, in <module>

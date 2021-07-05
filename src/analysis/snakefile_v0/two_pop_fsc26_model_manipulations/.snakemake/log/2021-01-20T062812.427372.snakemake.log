@@ -1,3 +1,0 @@
-TypeError in line 53 of /code/src/analysis/two_pop_fsc26/Snakefile4:
-can only concatenate str (not "float") to str
-  File "/code/src/analysis/two_pop_fsc26/Snakefile4", line 53, in <module>

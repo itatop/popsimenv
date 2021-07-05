@@ -1,3 +1,0 @@
-TypeError in line 57 of /code/src/analysis/two_pop_fsc26/Snakefile5:
-__init__() got an unexpected keyword argument 'initial_size'
-  File "/code/src/analysis/two_pop_fsc26/Snakefile5", line 57, in <module>

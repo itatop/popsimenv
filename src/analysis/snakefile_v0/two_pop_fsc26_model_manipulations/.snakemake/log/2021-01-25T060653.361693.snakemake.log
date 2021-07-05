@@ -1,3 +1,0 @@
-ModuleNotFoundError in line 18 of /code/src/analysis/two_pop_fsc26/Snakefile6:
-No module named 'OutOfAfrica_3G09ModEx6'
-  File "/code/src/analysis/two_pop_fsc26/Snakefile6", line 18, in <module>
