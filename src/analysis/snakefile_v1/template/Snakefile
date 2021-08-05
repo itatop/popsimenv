@@ -6,18 +6,26 @@ import numpy as np
 import pandas as pd
 import pickle
 import os.path
-
 import stdpopsim
 import tskit
-sys.path.append("/code/src/methods/fsc26/")
+
+# path for root directory of code
+# root_dir = "/code/src/"                  # absolute path when running in Docker
+root_dir = os.getcwd() + "/../../../"      # relative to location of Snakefile
+
+# path for methods directory.
+methods_dir_path = root_dir + "methods"
+
+sys.path.append(methods_dir_path + "/fsc26/")
 import fastsimcoal2
-sys.path.append("/code/src/methods/dadi/")
+sys.path.append(methods_dir_path + "/dadi/")
 import dadi_utils
-sys.path.append("/code/src/methods/plot/")
+sys.path.append(methods_dir_path + "/plot/")
 import plots
-sys.path.append("/code/src/methods/stdpopsim/")
+sys.path.append(methods_dir_path + "/stdpopsim/")
 import change_model
 import params_extractor
+
 
 # ###############################################################################
 # preperation :
